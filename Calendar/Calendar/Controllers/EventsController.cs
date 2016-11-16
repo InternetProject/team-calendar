@@ -17,7 +17,7 @@ namespace Calendar.Controllers
         // GET: Events
         public ActionResult Index()
         {
-            return View();
+            return View(db.Events.ToList());
         }
 
         // GET: Events/Details/5
